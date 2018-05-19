@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素类型</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+		/*  块元素,每个盒子占一行，不会跟随排列  */
+		div{
+			background-color: green;
+			/*text-align: center;*/
+			margin:10px 0;
+		}
+		.bbq{
+			width: 200px;
+		}
+		.bbq2{
+			width: 300px;
+		}
+		/*   内联元素   盒子并在一行   */
+		.bbq3,.bbq4{
+			/*   去除内联元素空隙的方法2：把父级的font-size设置为0，再设置子级的字体大小  */
+			width: 300px;
+			height: 200px;
+			border:1px solid #333;
+			margin:10px auto;
+			font-size: 0;
+		}
+		.bbq3 a{
+			background-color: gold;
+			width: 100px;
+			height: 50px;
+			/*   内联元素设置width和height无作用，宽高由内容决定  */
+			/*margin-left: 20px;
+			padding-left: 20px;*/
+			/*  内联元素可以设置margin和padding的左右，设置上下无效  */ 
+			font-size:20px;
+		}
+		.bbq4{
+			text-align: center;
+			line-height: 200px;
+			/*  若子级是内联元素，在父级中text-align设置水平居中
+			line-height设置垂直居中  */
+		}
+		.bbq4 a{
+			font-size:20px;
+			background-color:white;
+		}
+
+	</style>
+</head>
+<body>
+	<div>this is the first div</div>
+	<div class="bbq">this is the second div</div>
+	<div class="bbq2">this is the third div</div>
+	<div class="bbq3">
+	<a href="">this is the first a</a>
+	<a href="">this is the second a</a>
+	<a href="">this is the third a</a>
+	<a href="">this is the fourth a</a>
+	<!-- 内联元素换行导致空隙，不换行则没有空隙  -->
+</div>
+	<div class="bbq4">
+		<a href="">this is another a</a>
+	</div>
+</body>
+</html>

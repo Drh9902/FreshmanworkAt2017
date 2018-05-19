@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素溢出</title>
+	<style type="text/css">
+		.con{
+			width: 500px;
+			height: 300px;
+			border:1px solid #333;
+			margin:50px auto 0;
+			overflow: auto;
+			/*  默认是visable 无变化
+				hidden：隐藏溢出部分 
+				scroll：设置滚动条,不管是否溢出
+				auto：溢出显示滚动条，不溢出则不显示，并且哪边溢出显示哪边*/
+		}
+		.box{
+			width: 300px;
+			height: 600px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box"></div>
+	</div>
+	
+</body>
+</html>

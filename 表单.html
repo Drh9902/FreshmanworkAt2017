@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+</head>
+<body>
+	<h2>用户注册</h2>
+
+	<form action="http://www.baidu.com" method="post">
+		<!-- 用get方法传输会使value值在网址后面以？分隔显示
+		     使用post方法则不会 -->
+		<div>
+			<label for="username">用户名:</label>
+			<input type="text" name="username" id="username">
+		</div>
+		<br />
+	<!-- label加for标签将文字包围起来，可以点击文本激活输入框， -->
+		<div>
+			<label for="pwd">密码：</label>
+			<input type="password" name="psd" id="pwd">
+		</div>
+		<br />
+<!-- 输入框 -->
+		<div>
+			<label>性别：</label>
+			<input type="radio" name="gender"  id="male" value="1"><label for="male"> 男</label>
+			<input type="radio" name="gender" id="female" value="2"> <label for="female">女</label>
+		</div>
+		<br />
+<!-- 单选圆形框  -->
+		<div>
+			<label>爱好：</label>
+			<input type="checkbox" name="like" value="game1">王者荣耀
+			<input type="checkbox" name="like" value="game2">绝地求生
+			<input type="checkbox" name="like" value="game3">QQ飞车
+			<input type="checkbox" name="like" value="game4">崩坏3 
+		</div>
+		<br />
+<!-- 多选方形框 -->
+		<div>
+			<label>籍贯：</label>
+			<select>
+				<option value="0" >北京</option>
+				<option value="1">上海</option>
+				<option value="2">广州</option>
+				<option value="3">深圳</option>
+			</select>
+		</div>
+		<br />
+<!-- 下拉拖动选择框 -->
+		<div>
+			<label>照片：</label>
+			<input type="file" name="">
+		</div>
+		<br />
+<!-- 上传文件 -->
+		<div>
+			<label>用户描述：</label>
+			<textarea></textarea>
+		</div>
+		<br />
+<!-- 多行输入框 -->
+		<div>
+			<input type="submit" name=""  value="提交">
+			<!--    <input type="image" name=""  src="">  一种用图片作为提交按钮的标签-->
+			<input type="reset" name=""   value="重置">
+			<input type="button" name=""   value="按钮">
+			<input type="hidden" name="hid" value="10000"  >
+			<!--  hidden是隐藏的数据  存储值 -->
+		</div>
+		<br />
+
+</body>
+</html>

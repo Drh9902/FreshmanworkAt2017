@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css 盒子模型</title>
+	<style type="text/css">
+		.bbq{
+			width: 200px;
+			height: 100px;
+			background-color: blue;
+			color: white;
+			/*  border可以设置为    实线solid  虚线 dashed 点线dotted */
+			/*border-top:5px solid #000;
+			border-bottom: 5px dashed #000;
+			border-left: 5px dotted #000;*/
+			border:2px solid #000;
+			/*padding: 0px 300px 0px 200px;*/
+			/*   padding设置内容与盒子边框的距离，会把盒子撑大  */
+			/*  padding四个值，从top开始，顺时针方向 上0 右300 下0 左200  */
+			/*padding: 100px 200px 100px;*/
+			/*  padding三个值 上100，左右200，下100   */
+			padding: 100px 50px;
+			/*padding两个值 上下100 左右50*/
+			/*  padding一个值   */
+			margin-top: 50px;
+			margin-bottom: 100px;
+			/*  设置上下或左右margin时，取更大的值为margin而不是相加，如此时盒子的距离应为100px  */
+			margin: 100px auto;
+			/* 如border一般，margin可以设置1，2，3，4个值
+			设置两个值，后为auto可使盒子在浏览器页面水平居中  */
+		}
+	</style>
+</head>
+<body>
+	<div class="bbq">我真的好想你，在每一个雨季.
+
+			你选择遗忘的，是我最不舍的.</div>
+	<div class="bbq">我真的好想你，在每一个雨季.
+
+			你选择遗忘的，是我最不舍的.</div>
+</body>
+</html>

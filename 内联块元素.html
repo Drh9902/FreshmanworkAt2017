@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内联块元素</title>
+	<style type="text/css">
+		.bbq3{
+			width: 500px;
+			height: 300px;
+			border: 1px solid #333;
+			margin:10px auto;
+		}
+		.bbq3 a{
+			background-color: blue;
+			margin: 10px;
+			width: 200px;
+			height: 50px;
+			display:inline-block;
+			/*  内联块元素可以设置内联元素不能设置的width，height，margin和padding的上下
+			但是margin的上下外边距没有合并，并且内联元素之间也会有间隙，用在父级设置fontsize和不换行的方法可以去除 ，设置line-height垂直居中 */
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="bbq3">
+	<a href="">this is the first a</a>
+	<a href="">this is the second a</a>
+	<a href="">this is the third a</a>
+	<a href="">this is the fourth a</a>	
+</div>
+	
+</body>
+</html>

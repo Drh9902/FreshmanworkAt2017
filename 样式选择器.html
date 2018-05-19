@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>样式选择器</title>
+	<style type="text/css">
+		/* 标签选择器 
+			*{
+				margin:0;
+				padding:0;
+			}
+		*   匹配所有的标签，对所有的标签都作用，不建议使用
+		*/
+		div{
+			color: green;
+		}
+		/*  id选择器，一个id只能对应一个标签 ,不能一个id用于多个标签 */
+		#box{
+			color: red;
+		}
+
+		/*   类选择器 */
+		.ex{
+			color:blue;
+			
+		}
+		.songti{
+			font-family:'宋体';
+		}
+
+		/*  层级选择器  */
+		.duanluo{
+			font-size: 16px;
+			text-indent: 32px;
+		}
+		.duanluo em{
+			font-weight: bold;
+			color:gold;
+		}
+		.list{
+			list-style: none;
+			/* 去除无序列表前的点 */
+			font-family:'宋体';
+		}
+		.list li a{
+			font-size: 20px;
+			font-weight: bold;
+			text-decoration:none;
+		}
+		/* 组合选择器，类的相同的样式可以写在一起，不同的各自另外写  */ 
+		.box1,.box2,.box3{
+			font-size:20px;
+			text-indent: 40px;
+		}
+
+		.box1{
+			color: red;
+		}
+		.box1{
+			color: gold;
+		}
+
+		.box3{
+			color: blue;
+		}
+		/*
+		伪类hover：表示鼠标悬浮在元素上时的状态
+		伪元素选择器before和after：通过样式在元素中插入内容
+		 */
+		.list a:hover{
+			font-size:30px;
+			color:gold;
+			text-decoration:underline;
+		}
+		/*   在所有的标签都能用hover，但只有在a标签能选中   */
+		.box1:before{
+			color: red;
+			content: "吴咸儿你就是猪";
+		}
+		.box2:after{
+			content: "吴咸儿你还是猪";
+		}
+		/*  before和after插入的内容不能选中   */
+
+	</style>
+</head>
+<body>
+	<div>这是一个div</div>
+	<div id="box">这是第二个div</div>
+	<div id="box" class="ex">这是第三个div</div>
+	<div class="ex songti">这是第四个div</div>
+	<!--  若同时使用id选择器和类选择器，则id选择器覆盖类选择器，id选择器优先度更高  -->
+	<p class="duanluo"> 信息，“主体”部分提供网页的具体内容。<em>超文本标记语言</em>，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。 超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。
+	</p>
+
+	<!-- 层级选择器设置在标签下的标签包含的字体的文本样式
+	.duanluo 下的em会被改变，而没有在.duanluo下的em则不受影响-->
+	<p>信息，“主体”部分提供网页的具体内容。<em>超文本标记语言</em>，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。 超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。
+	</p>
+	<br />
+	<ul class="list">
+		<li><a href="">标题1</a></li>
+		<li><a href="">标题2</a></li>
+		<li><a href="">标题3</a></li>
+		<li><a href="">标题4</a></li>
+		<li><a href="">标题5</a></li>
+
+	</ul>
+
+	<div class="box1">sublime text1</div>
+	<div class="box2">sublime text2</div>
+	<div class="box3">sublime text3</div>
+</body>
+</html>

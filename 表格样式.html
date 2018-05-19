@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格的样式</title>
+	<style type="text/css">
+		.bbq{
+			width: 600px;
+			height: 200px;
+			border: 1px solid #333;
+			/*  线条的宽度，实线，颜色  */
+			border-collapse: collapse;
+		}
+		/*  border-collapse设置表格线条合并塌陷为设定的宽度  */
+		.bbq td,.bbq th{
+			border: 1px solid #333;
+			text-align:center;
+			/* 设置文本的对齐方式 */
+		}
+		.bbq th{
+			background-color: #3366cc;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<table class="bbq">
+		<tr>
+			<th>序号</th>
+			<th>名称</th>
+			<th>价格</th>
+			<th>备注</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>苹果</td>
+			<td>￥ 998.00</td>
+			<td>已售罄</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>菠萝</td>
+			<td>￥ 998.00</td>
+			<td>已售罄</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>banana</td>
+			<td>￥ 998.00</td>
+			<td>已售罄</td>
+		</tr>
+
+	</table>
+</body>
+</html>

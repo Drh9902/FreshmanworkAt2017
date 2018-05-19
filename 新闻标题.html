@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻标题-盒子尺寸</title>
+	<style type="text/css">
+		.box{
+			/*  padding改变盒子的高度和宽度  */
+			width: 400px;
+			height: 35px;
+			border-top: 1px solid #f00;
+			border-bottom: 3px solid #333;
+			font-size: 20px;
+			color: #333;
+			text-indent: 20px;
+			/*  设置首行缩进  */
+			font-family: 'Microsoft Yahei';
+			margin: 0px auto;
+			/*  设置文字的垂直居中  ，可以用padding-top和文字的行高大小 */
+			padding-top: 15px;
+			line-height: 20px;
+			/* 雅黑字体设定有行高，导致文字偏下，设置文字行高line-height */
+		}
+		.box2{
+			width: 400px;
+			height: 50px;
+			border-top: 1px solid #f00;
+			border-bottom: 3px solid #333;
+			margin: 50px auto;
+			font-family: 'Microsoft Yahei';
+			color: #333;
+			font-size: 20px;
+			text-indent: 20px;
+			line-height: 50px;
+			/*  将文字的行高设置为高度可以直接垂直居中  */
+		}
+		
+		.box3{
+			width:600px;
+			/*height: 300px;*/
+
+			/*  不设置盒子的高度将不会导致元素溢出 */
+			border:1px solid #333;
+			margin: 50px auto;
+		}
+		.box3 div{
+			font-size: 20px;
+			text-indent:40px;
+			margin: 20px 30px;
+			/*   左右及上下有margin的外边距合并，取大的值作为margin值  */
+		}
+	</style>
+</head>
+<body>
+	<div class="box">新闻标题</div>
+	<br />
+	<br />
+	<div class="box2">新闻标题2</div>
+	<br />
+	<br />
+	<div class="box3">
+		<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+				<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+				<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+				<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+				<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+				<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+						<div>
+	向快乐出发 世界那么大.任风吹雨打 梦总会到达
+
+	向快乐出发 别害怕.幸福就像天边 灿烂的晚霞 一起来吧
+		</div>
+	</div>
+	
+</body>
+</html>

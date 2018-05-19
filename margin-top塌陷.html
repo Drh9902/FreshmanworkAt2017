@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin-top塌陷</title>
+	<style type="text/css">
+		.box1{
+			/*width: 298px;
+			height: 198px;
+			background-color: gold;
+			/*解决方案1   给外面的盒子加上边框
+			border:1px solid gold;*/
+			
+
+			width: 300px;
+			height: 200px;
+			background-color: gold;
+			/*   解决方案2   在外面的盒子里设置  overflow: hidden;  */
+			/*overflow: hidden;*/
+		}
+		.box1 div{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			margin-top: 50px;
+			/*  在一个盒子内设置另一个盒子的margin-top会导致盒子内设置的margin-top设置在外面的盒子   */		
+		}
+		/* 解决方案3  伪元素,让外面的盒子使用这个类 .clearfix  */
+		.clearfix:before{
+			content: "";
+			display:table;
+		}
+		</style>
+</head>
+<body>
+	<div class="box1 clearfix">
+		<div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
